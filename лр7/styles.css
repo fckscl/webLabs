@@ -1,0 +1,113 @@
+@keyframes loading {
+    from{
+        width: 10%;
+    }
+    to{
+        width: 99%;
+    }
+}
+@keyframes round {
+    from{
+        top: 0px;
+        left: 0px;
+        background-color: blueviolet;
+        
+    }
+    25%{
+        background-color: aqua;
+        top: 0px;
+        left: 90vw;
+    }
+    50%{
+        background-color: red;
+        top: 80vh;
+        left: 90vw;
+    }
+    75%{
+        background-color: black;
+        top: 80vh;
+        left: 0px;
+    }
+    to{
+        background-color: blueviolet;
+        top: 0px;
+        left: 0px;
+    }
+}
+@keyframes coffee_an {
+    from {
+      background: url("/лр7/images/12515a101ad8a7e6b426dbffdd113ade.jpg") no-repeat center;
+    }
+    30% {
+    background: url("/лр7/images/images.jfif") no-repeat center;
+    }
+
+    75% {
+    background: url("/лр7/images/изолированный-на-белом-фоне-рисунок-кубка-стильного-кофе-164071037.jpg") no-repeat center;
+    }
+    to {
+        background: url("/лр7/images/3-1.png") no-repeat center;
+    }
+}
+@keyframes snow {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+.coffee:hover {
+    animation-play-state: running;
+}
+.coffee {
+    animation: coffee_an 5s linear;
+    width: 200px;
+    height: 200px;
+    border: 2px solid purple;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    margin-top: 20%;
+}
+.cls:hover {
+    animation-play-state: running;
+}
+.cls{
+    height: 10vh;
+    background-color: aquamarine; 
+    border: 10px solid salmon; 
+    animation: loading 5s linear;
+    animation-play-state: paused;
+    text-align: center;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 2px solid red;
+    border-radius: 50%;
+    animation: round 10s linear infinite;
+}
+.links{
+    text-align: center;
+}
+a:nth-child(2n+1):hover div{
+    color: green;
+    transform: scale(-1, 1);
+}
+a:nth-child(2n):hover div{
+    color: green;
+    transform: scale(1, -1);
+}
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(/images/1.png), url(/images/2.png), url(/images/3.png);
+    animation: snow 20s linear infinite;
+}
+/* body {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+} */

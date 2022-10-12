@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Поиск и фильтрация вопросов на форуме программистов
+        </title>
+    </head>
+    <body>
+        <form>
+            <fieldset name="Форма для вопросов">
+                <legend>Форма для вопросов</legend>
+                <p><input type="text" required> <label> Логин </label>
+                <input type="password" required maxlength="8"> <label>Пароль</label></p>
+                <p><input type="email" required> <label>Почта пользователя</label></p>
+                <p><textarea name="comment" placeholder="Введите ваш вопрос" required></textarea></p>
+                <p><select label="Выберите ваш возраст" required > 
+                    <option>0 - 10</option>
+                    <option>10 - 15</option>
+                    <option>15 - 16</option>
+                    <option>16-144</option>
+                </select> <label>Возраст пользователя</label></p>
+                <p><input type="submit">
+                <input type="reset"></p>
+            </fieldset>
+        </form>
+    </body>
+</html>
