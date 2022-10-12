@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            флаг
+        </title>
+        <style>
+            .blue{
+                float: left;
+                background-color: blue;
+                width: 40%;
+                height: 60%;
+            }
+            .marine{
+                float: right;
+                background-color: aquamarine;
+                width: 60%;
+                height: 30%;
+            }
+            .green{
+                background-color: green;
+                float: right;
+                height: 30%;
+                width: 60%;
+            }
+            .red{
+                background-color: red;
+                clear: both;
+                height: 30%;
+                width: 100%;
+            }
+            .center{
+                position: absolute;
+                top: 50%;
+                left: 30%;
+            }
+            .center2{
+                position: fixed;
+                top: 50%;
+                left: 30%;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="height: 100vh;">
+            <div class="center">Свойство position позволяет точно задать новое местоположение блока
+                относительно того места, где он находился бы в нормальном потоке документа. По умолчанию все элементы располагаются последовательно один за
+                другим в том порядке, в котором они определены в структуре HTMLдокумента. Свойство не наследуется.
+                Свойство position определяет, как элемент позиционируется на странице и будет ли он отображаться в обычном потоке документа. Оно применяется в сочетании со свойствами смещения блока – top, right, bottom и left, которые точно определяют, где элемент будет расположен путём перемещения
+                элемента в разных направлениях посередине</div>
+            <div class="marine" title="этот"></div>
+            <div class="blue"></div>
+            <div class="green"></div>
+            <div class="red"></div>
+        </div>
+    </body>
+</html>

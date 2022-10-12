@@ -1,0 +1,23 @@
+td{
+    width: 100px;
+    height: 100px;
+}
+body{
+    background: #454545;
+}
+.dark{
+    background: url(images/75f578a7-b951-4ccd-a8da-257e7c11c41c.jfif);
+    background-size: 7%;
+}
+
+@keyframes color {
+    from{
+        color: red;
+    }
+    to{
+        color: white;
+    }
+}
+.text{
+    animation: color 5s infinite;
+}

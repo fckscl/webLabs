@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width,initial-scale=1'/>
+        <meta content='true' name='HandheldFriendly'/>
+        <meta content='width' name='MobileOptimized'/>
+        <meta content='yes' name='apple-mobile-web-app-capable'/>
+        <title>
+            Лр6
+        </title>
+        <style>
+            @media screen and (orientation: landscape) and (min-width: 800px){
+                .cube{
+                    width: 20vw;
+                    height: 20vw;
+                    display: flex;
+                    border-radius: 10px;
+                    background-color: aqua;
+                    /*text-align: center;*/
+                    font-size: x-large;
+                    align-items: center;
+                    margin: 10px;
+                    justify-content: space-around;
+                }
+                .text{
+                    margin: 5%;
+                    width: 20vw;
+                    height: fit-content;
+                    background-color: aquamarine;
+                    border-radius: 10px;
+                }
+                body{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            @media screen and (max-width: 800px) {
+                .cube{
+                    width: 40vw;
+                    height: 40vw;
+                    display: flex;
+                    background-color: aqua;
+                    /*text-align: center;*/
+                    font-size: x-large;
+                    align-items: center;
+                    margin: 5%;
+                    justify-content: space-around;
+                    border-radius: 10px;
+                }
+                .text{
+                    margin: 5%;
+                    width: 40vw;
+                    height: fit-content;
+                    background-color: aquamarine;
+                    border-radius: 10px;
+                }
+                body{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                }
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div><div class="cube">1</div> <div class="text">Устанавливает основную ось, таким образом определяя направление flex элементов, помещаемых в flex контейнер. Flexbox — это (помимо дополнительной упаковки) концепция однонаправленного макета. Думайте о flex элементах, как о первичных раскладках в горизонтальных рядах или вертикальных столбцах.</div> </div>
+        <div><div class="cube">2</div><div class="text">Устанавливает основную ось, таким образом определяя направление flex элементов, помещаемых в flex контейнер. Flexbox — это (помимо дополнительной упаковки) концепция однонаправленного макета. Думайте о flex элементах, как о первичных раскладках в горизонтальных рядах или вертикальных столбцах.</div> </div>
+        <div><div class="cube">3</div><div class="text">Устанавливает основную ось, таким образом определяя направление flex элементов, помещаемых в flex контейнер. Flexbox — это (помимо дополнительной упаковки) концепция однонаправленного макета. Думайте о flex элементах, как о первичных раскладках в горизонтальных рядах или вертикальных столбцах.</div> </div>
+        <div><div class="cube">4</div><div class="text">Устанавливает основную ось, таким образом определяя направление flex элементов, помещаемых в flex контейнер. Flexbox — это (помимо дополнительной упаковки) концепция однонаправленного макета. Думайте о flex элементах, как о первичных раскладках в горизонтальных рядах или вертикальных столбцах.</div> </div>
+    </body>
+</html>
