@@ -1,0 +1,9 @@
+* {
+    margin: 10px auto;
+    /* color: aliceblue; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
