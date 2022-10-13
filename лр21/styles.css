@@ -1,0 +1,17 @@
+* {
+    margin: 10px auto;
+    /* color: aliceblue; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.back{
+    background: lightBlue;
+    /* text-align: center; */
+    color: chocolate;
+    height: 60px;
+    border-radius: 10px;
+}
