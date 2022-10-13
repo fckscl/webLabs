@@ -7,11 +7,11 @@ $(document).ready(function() {
     }
     console.log(JSON.stringify(content))
 
-    $ul = $("<ul></ul>")
-    for (i of $list){
-        $ul.html(i)
+    let ul = $("<ul></ul>")
+    for (i in content){
+        ul.append($(`<li>${i}</li>`))
         console.log(i)
     }
-    console.log($ul.innerHTML)
-    // $("body").append($ul)
+    console.log(ul.html())
+    $("body").append(ul)
 });
